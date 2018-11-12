@@ -1,0 +1,37 @@
+AWS Compute Services:
+	EC2: Raw server, resizable compute capacity in the cloud, which can be customized according to your need
+	Lambda: Execute background tasks (compressing, filter) upon triggers, not for hosting an application
+	Elastic Beanstalk: Deploy your appilcation without worrying about the underlying hardware or firewall
+	Elastic Load Balancer: Distributes the workload on the deployed instances
+	AutoScaling: Scale up and down automatically base on the combined CPU usage
+AWS Storage Services:
+	S3(Simple Storage Service): Object Oriented File System, all files you upload are treated like Object and stored in Bucket(root folder)
+	Cloudfront: Content Delivery Network, deliver to a location near user instead of sending data directly to reduce respond time
+	Elastic Block Storage: a Hard Drive to EC2, block level storage, provides high IOPS
+	Glacier: Data Archiving service, offering low price storage, to store data which is not frequently accessed
+	Snowball: Physical transfer of data to AWS Infrastructure via a Snowball device
+	Storage Gateway: Provide seamless integration between your on premise servers and the AWS Infrastructure in case DB corrupted
+AWS Database Services:
+	RDS: Relational Database Management Service
+	Aurora: is a DB, based on MySQL but better performance 
+	DynamoDB: Non-Relational Database Management Service (noSQL DB)
+	ElastiCache: save results of some frequently used queries and return to users without touching DB
+	RedShift: is a analysis tool, fully managed data stored on your DB, like RDS or DynamoDB
+AWS Network Services:
+	VPC(Virtual Private Cloud): Virtual Network where in you lauch your AWS resources
+	Direct Connect: is a leased line to directly connect to AWS Infrastructure instead of using the internet
+	Route 53: is a Domain Name System, convert URL to IP address of the instance which website is hosted
+AWS Management Services:
+	CloudWatch: is a cloud monitoring tool to monitor all AWS resources (ex: notify  when EC2 instances CPU > 90%)
+	CloudFormation: is used to templatize the AWS Infrastructure from one environment to another
+	CloudTrail: is a logging service from AWS
+	CLI: is a command line tool, replace GUI of AWS
+	OpsWorks: is a configuration management tool, consist a Stack of Layers. If you make changes on Stack, it will be apply on all Layers
+	Trusted Advisor: is a personal assistant to you in AWS Infrastructure
+AWS Security Services:
+	IAM: Indentification & Authentication Management tool, provides diff access levels to users
+	KMS: Create and manage encryption keys to encrypt your data 
+AWS Application Services:
+	SES(Email): Bulk email service, to send large amount of emails or auto reply
+	SQS(Queue): Queuing service which acts as a buffer, track the task list, remove task that is done from queue and the next task is queued
+	SNS(Notification): Notification base on triggers
